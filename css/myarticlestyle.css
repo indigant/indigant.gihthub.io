@@ -1,1 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #04f3f3;
+}
 
+.topguide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+}
+
+.topguide a {
+    color: #383737;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.Profilephoto {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.show {
+    border-radius: 10px; /* 设置圆角的半径 */
+    margin: 50px 10px 10px 10px;
+    padding: 20px; /* 设置内边距 */
+    background-color: rgba(177, 241, 241, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.show h1 {
+    text-align: center;
+}
+
+.show pre {
+    border-radius: 10px; /* 设置圆角的半径 */
+    padding: 20px; /* 设置内边距 */
+    background-color: rgba(177, 241, 241, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
