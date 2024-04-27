@@ -48,3 +48,7 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+code {
+    font-size: 22px;
+}
