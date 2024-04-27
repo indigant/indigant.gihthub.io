@@ -61,7 +61,7 @@ int dijkstra() {
     memset(dist, INF, sizeof dist); // 初始化
     dist[1] = 0; // 其他节点到1号点的距离初始化为inf，1到自己的距离为0
 
-    priority_queue<PII, vector<PII>, greater<PII>> heap; // 用优先队列来制造小根堆
+    priority_queue&lt;PII, vector&lt;PII&gt, greater&lt;PII&gt;&gt; heap; // 用优先队列来制造小根堆
     // 每个元素存放：该节点到1号点的距离，该节点的编号
     heap.push({0, 1}); // 往优先队列里添加第一号点
 
@@ -104,7 +104,7 @@ int main () {
 
     int t = dijkstra();
 
-    cout << t << endl;
+    cout &lt; t  &lt;&lt; endl;
 
     return 0;
 }
