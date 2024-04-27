@@ -1,0 +1,27 @@
+h1 {
+    color: rgb(80, 185, 185);
+}
+
+.title {
+    text-align: center;
+    color: aqua;
+    font-size: 100px; /* 设置字体大小 */
+}
+
+.update {
+    text-align: right;
+}
+
+.update_time {
+    color:rgb(117, 160, 160);
+}
+
+.update_content{
+    color:rgb(101, 168, 187);
+}
+
+a {
+    color: gray;
+    font-size: 30px;
+    text-decoration: none;
+}
