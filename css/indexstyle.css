@@ -1,27 +1,35 @@
-h1 {
-    color: rgb(80, 185, 185);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #04f3f3;
 }
 
-.title {
-    text-align: center;
-    color: aqua;
-    font-size: 100px; /* 设置字体大小 */
+.topguide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    /* 模糊效果 */
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
 }
 
-.update {
-    text-align: right;
-}
-
-.update_time {
-    color:rgb(117, 160, 160);
-}
-
-.update_content{
-    color:rgb(101, 168, 187);
-}
-
-a {
-    color: gray;
-    font-size: 30px;
+.topguide a {
+    color: #383737;
     text-decoration: none;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.Profilephoto {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
