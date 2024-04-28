@@ -7,7 +7,8 @@ body {
 
 .topguide {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -21,14 +22,47 @@ body {
     font-size: 22px;
 }
 
-.Profilephoto {
-    border-radius: 50%;
-    max-width: 50px;
+.show {
+    margin: 10% auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    height: 600px;
 }
 
-.show {
+.sideBar {
     display: flex;
-    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    max-width: 200px;
+
+}
+
+.profilePhoto {
+    display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    max-width: 200px;
+    max-height: 210px;
+}
+
+.profilePhoto img {
+    margin: 5% auto 0% auto;
+    border-radius: 50%;
+    max-width: 50%;
+}
+
+.profilePhoto h2 {
+    margin: 0;
+}
+
+.profilePhoto p {
+    margin: 0 auto 5% auto;
 }
