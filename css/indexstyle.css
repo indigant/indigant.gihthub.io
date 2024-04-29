@@ -3,10 +3,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     /* background-color: #04f3f3; */
-    background-image: url('../image/backGround3.svg');
+    background-image: url('../image/backGround4.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 
 .topguide {
