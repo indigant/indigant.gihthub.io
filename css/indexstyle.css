@@ -3,13 +3,14 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     /* background-color: #04f3f3; */
-    background-image: url('../image/back.svg');
+    background-image: url('../image/backGround3.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .topguide {
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -22,12 +23,17 @@ body {
 .topguide a {
     color: #383737;
     text-decoration: none;
-    margin-right: 10px;
-    font-size: 22px;
+    margin: 50px;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.topguide a:hover {
+    color: rgba(60, 59, 59, 0.7);
 }
 
 .show {
-    margin: 10% auto;
+    margin: 151px auto;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
