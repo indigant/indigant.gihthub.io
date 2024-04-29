@@ -1,8 +1,17 @@
 body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #04f3f3;
+    /* background-color: #04f3f3; */
+    /* background-image: url(../image/backGround3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%; */
+    
 }
 
 .topguide {
@@ -11,14 +20,20 @@ body {
     align-items: center;
     background-color: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-    padding: 10px 20px;
+    width: 100%;
+    height: 70px;
 }
 
 .topguide a {
     color: #383737;
     text-decoration: none;
-    margin-right: 10px;
-    font-size: 22px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.topguide a:hover {
+    color: rgba(60, 59, 59, 0.7);
+    transition: color 0.3s;
 }
 
 .Profilephoto {
@@ -28,27 +43,46 @@ body {
 
 .show {
     border-radius: 10px; /* 设置圆角的半径 */
-    margin: 50px 10px 10px 10px;
-    padding: 20px; /* 设置内边距 */
-    background-color: rgba(177, 241, 241, 0.5);
+    padding: 10px;
+    /* background-color: rgba(177, 241, 241, 0.5); */
+    /* background-color: blue; */
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    width: 70%;
+    height: 400px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
 }
 
-.show h1 {
-    text-align: center;
-}
-
-.show pre {
+.show div {
+    font-size: 30px;
+    display: flex;
     border-radius: 10px; /* 设置圆角的半径 */
+    margin: auto;
     padding: 20px; /* 设置内边距 */
-    background-color: rgba(177, 241, 241, 0.4);
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: 40%;
+    height: 20%;
+    background-color: rgba(177, 241, 241, 0.6);
 }
 
-code {
-    font-size: 22px;
+.show div:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(255, 255, 255, 0.5); /* 鼠标悬停时改变背景色 */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 300px;
+}
+
+.title span {
+    font-size: 50px;
+    font-family: STKaiti;
 }
