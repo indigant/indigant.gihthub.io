@@ -38,8 +38,10 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
-    flex-direction: column;
-    max-width: 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     height: 600px;
 }
 
@@ -89,7 +91,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: gray; */
-    min-height: 50%;
+    /* min-height: 50%; */
     height: max-content;
 }
 
@@ -108,14 +110,34 @@ body {
 }
 
 .sideGuide li:hover {
-    background-color: rgb(255, 255, 255, 0.5); /* 鼠标悬停时改变背景色 */
+    background-color: rgb(255, 255, 255, 0.5);
+    /* 鼠标悬停时改变背景色 */
 }
 
 .link-item:active {
-    background-color: darkgray; /* 鼠标点击时改变背景色 */
+    background-color: darkgray;
+    /* 鼠标点击时改变背景色 */
 }
 
 .sideGuide li span {
-    display: block; /* 将文字内容包裹在块级元素内 */
-    
+    display: block;
+    /* 将文字内容包裹在块级元素内 */
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
 }
