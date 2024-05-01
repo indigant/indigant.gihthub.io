@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLOG OF INDIGANT</title>
-<link rel = "stylesheet" href = "css/indexstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG OF INDIGANT</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
 </head>
 
 <body>
@@ -19,22 +20,54 @@
     <div class="show">
 
         <!-- 侧边栏 -->
-        <div class = "sideBar">
+        <div class="sideBar">
             <!-- 头像 -->
-            <div class = "profilePhoto">
-                <img src = "image/image1.jpg">
+            <div class="profilePhoto">
+                <img src="image/image1.jpg">
                 <!-- 签名 -->
                 <h2>indigant</h2>
                 <p>东隅已逝 桑榆非晚</p>
             </div>
             <!-- 侧边栏导航 -->
-            <ul class = "sideGuide">
+            <ul class="sideGuide">
                 <li class="link-item">首页</li>
-                <li class="link-item">壁纸</li>
+                <li class="link-item active">壁纸</li>
                 <li class="link-item">微信</li>
                 <li class="link-item">QQ</li>
             </ul>
         </div>
+
+        <!-- 响应点击内容 -->
+        <div class="content">
+            <img src="image/wallpaper/wallpaper1.jpg">
+        </div>
+
+        <script>
+            // 声明wallPaper常量用于记录图片信息
+            const wallPaper = [
+                { url: './image/wallpaper/wallpaper1.jpg' },
+                { url: './image/wallpaper/wallpaper2.jpg' },
+                { url: './image/wallpaper/wallpaper3.jpg' },
+                { url: './image/wallpaper/wallpaper4.jpg' }
+            ]
+            // 声明sideGuide常量获取边栏的选择器
+            const sideGuide = document.querySelector(".sideGuide")
+            // 抓取contentDOM对象
+            // const con = document.querySelector(".content")
+            const img = document.querySelector(".content img")
+
+            let i = 0
+            // 开启定时器
+            setInterval(function () {
+                // console.log(wallPaper[i]);
+                // 为img对象添加属性
+                i++
+                if (i >= wallPaper.length) {
+                    i = 0
+                }
+                img.src = wallPaper[i].url;
+            }, 1000)
+        </script>
 
     </div>
 
