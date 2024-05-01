@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MY ARTICLE</title>
-<link rel = "stylesheet" href = "../css/myarticlestyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY ARTICLE</title>
+    <link rel="stylesheet" href="../css/myarticlestyle.css">
 </head>
 
 <body>
@@ -15,33 +16,45 @@
             <a href="#">联系方式</a>
         </div>
         <div>
-            <img class = "Profilephoto" src = "../image/image1.jpg">
+            <img class="Profilephoto" src="../image/image1.jpg">
         </div>
     </div>
 
-    <div class = "title">
+    <div class="title">
         <span>这是一个标题</span>
     </div>
 
     <div class="show">
-        <div class = "cpp">
+        <div class="cpp">
             <span>C++笔记</span>
         </div>
-        <div class = "java">
+
+        <script>
+            // 使用选择器找到需要点击跳转的 div 元素
+            const cpp = document.querySelector('.cpp');
+
+            // 给 div 元素绑定点击事件
+            cpp.addEventListener('click', function () {
+                // 在点击事件处理函数中实现页面跳转
+                window.location.href = '../notes/cpp.html';
+            });
+        </script>
+
+        <div class="java">
             <span>还没想好</span>
         </div>
 
-        <div class = "web">
+        <div class="web">
             <span>还没想好</span>
         </div>
-        <div class = "web">
+        <div class="web">
             <span>还没想好</span>
         </div>
-        <div class = "web">
+        <div class="web">
             <span>还没想好</span>
         </div>
-        <div class = "web">
-            <span>还没想好</span>            
+        <div class="web">
+            <span>还没想好</span>
         </div>
     </div>
 
