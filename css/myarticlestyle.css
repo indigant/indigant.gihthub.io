@@ -53,6 +53,7 @@ body {
 }
 
 .show div {
+    cursor: pointer;
     font-size: 30px;
     display: flex;
     border-radius: 10px; /* 设置圆角的半径 */
