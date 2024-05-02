@@ -30,19 +30,63 @@
             </div>
             <!-- 侧边栏导航 -->
             <ul class="sideGuide">
-                <li class="link-item">首页</li>
-                <li class="link-item active">壁纸</li>
-                <li class="link-item">微信</li>
-                <li class="link-item">QQ</li>
+                <li class="homePage">首页</li>
+                <li class="wallPaper">壁纸</li>
+                <li class="weChat">微信</li>
+                <li class="qq">QQ</li>
             </ul>
         </div>
 
         <!-- 响应点击内容 -->
-        <div class="content">
-            <img src="image/wallpaper/wallpaper1.jpg">
+        <div class="none">
+            <img class = contentImg>
         </div>
 
         <script>
+            // 设置点击显示
+            const sideGuide = document.querySelector(".sideGuide")
+            const img = document.querySelector(".contentImg")
+            const wallPaperLink = document.querySelector('.wallPaper')
+            const homePageLink = document.querySelector('.homePage')
+            const weChatLink = document.querySelector('.weChat')
+            const qqLink = document.querySelector('.qq')
+            const content = document.querySelector('.none')
+
+            // 壁纸部分的点击事件
+
+            let timer // 保存间歇函数的编号
+
+            wallPaperLink.addEventListener('click', function () {
+                // 在点击事件处理函数中实现点击后显图片
+                content.classList.add('content')
+                
+                const wallPaper = [
+                    { url: './image/wallpaper/wallpaper1.jpg' },
+                    { url: './image/wallpaper/wallpaper2.jpg' },
+                    { url: './image/wallpaper/wallpaper3.jpg' },
+                    { url: './image/wallpaper/wallpaper4.jpg' }
+                ]
+
+                img.src = wallPaper[0].url;
+                let i = 0
+                // 开启定时器
+                timer = setInterval(function () {
+                    i++
+                    if (i >= wallPaper.length) {
+                        i = 0
+                    }
+                    img.src = wallPaper[i].url;
+                }, 1000)
+            });
+            // 首页部分的点击事件
+            homePageLink.addEventListener('click', function () {
+                content.classList.remove('content');
+                clearInterval(timer)
+                img.src = ""
+            });
+        </script>
+
+        <!-- <script>
             // 声明wallPaper常量用于记录图片信息
             const wallPaper = [
                 { url: './image/wallpaper/wallpaper1.jpg' },
@@ -62,12 +106,12 @@
                 // console.log(wallPaper[i]);
                 // 为img对象添加属性
                 i++
+                img.src = wallPaper[i].url;
                 if (i >= wallPaper.length) {
                     i = 0
                 }
-                img.src = wallPaper[i].url;
             }, 1000)
-        </script>
+        </script> -->
 
     </div>
 
