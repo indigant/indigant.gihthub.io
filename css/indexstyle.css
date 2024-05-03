@@ -114,17 +114,6 @@ body {
     /* 鼠标悬停时改变背景色 */
 }
 
-.link-item:active {
-    background-color: darkgray;
-    /* 鼠标点击时改变背景色 */
-}
-
-.sideGuide li span {
-    display: block;
-    /* 将文字内容包裹在块级元素内 */
-
-}
-
 .none {
     flex: 1;
 }
